@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Nepal Solar Market 2026 - Strategic Report</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+:root{
+    --primary:#042c66;
+    --secondary:#17b86f;
+    --orange:#ff7a00;
+    --light:#f4f7fb;
+    --dark:#1f2937;
+    --text:#222;
+    --gray:#666;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#dfe6f1;
+    color:var(--text);
+    line-height:1.6;
+}
+
+/* ==================== PDF PAGE ==================== */
+
+.page{
+    width:210mm;
+    min-height:297mm;
+    background:white;
+    margin:25px auto;
+    padding:18mm;
+    box-shadow:0 0 25px rgba(0,0,0,0.12);
+    position:relative;
+    page-break-after:always;
+}
+
+/* ==================== HERO ==================== */
+
+.hero{
+    position:relative;
+    border-radius:24px;
+    overflow:hidden;
+    margin-bottom:25px;
+    background:
+    linear-gradient(rgba(0,0,0,0.58),rgba(0,0,0,0.58)),
+    url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    padding:50px;
+    color:white;
+}
+
+.hero h1{
+    font-size:54px;
+    line-height:1.05;
+    margin-bottom:18px;
+    font-weight:800;
+}
+
+.hero h1 span{
+    color:var(--secondary);
+}
+
+.hero p{
+    max-width:760px;
+    font-size:16px;
+    color:#f0f0f0;
+}
+
+.hero-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.event-box{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(6px);
+    padding:18px;
+    border-radius:16px;
+    min-width:220px;
+}
+
+.event-box h3{
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+.event-box p{
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+/* ==================== SECTION ==================== */
+
+.section{
+    margin-bottom:24px;
+}
+
+.section-title{
+    background:var(--primary);
+    color:white;
+    padding:12px 18px;
+    border-radius:12px;
+    font-size:19px;
+    font-weight:700;
+    margin-bottom:16px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.section-title.orange{
+    background:var(--orange);
+}
+
+.section-title.green{
+    background:var(--secondary);
+}
+
+/* ==================== GRID ==================== */
+
+.grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.grid-4{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+}
+
+/* ==================== CARD ==================== */
+
+.card{
+    background:var(--light);
+    border-radius:18px;
+    padding:20px;
+    border-left:5px solid var(--secondary);
+    height:100%;
+}
+
+.card.orange{
+    border-left:5px solid var(--orange);
+}
+
+.card.blue{
+    border-left:5px solid var(--primary);
+}
+
+.card i{
+    font-size:30px;
+    margin-bottom:14px;
+    color:var(--secondary);
+}
+
+.card.orange i{
+    color:var(--orange);
+}
+
+.card.blue i{
+    color:var(--primary);
+}
+
+.card h3{
+    font-size:18px;
+    margin-bottom:10px;
+    color:var(--primary);
+}
+
+.card p{
+    font-size:13px;
+    color:#444;
+}
+
+.card ul{
+    padding-left:18px;
+    margin-top:10px;
+}
+
+.card ul li{
+    margin-bottom:8px;
+    font-size:13px;
+}
+
+/* ==================== QUOTE ==================== */
+
+.quote{
+    background:linear-gradient(135deg,var(--primary),#0b428f);
+    color:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    margin-bottom:24px;
+}
+
+.quote i{
+    font-size:40px;
+    color:#ffd54a;
+    margin-bottom:14px;
+}
+
+.quote h2{
+    font-size:25px;
+    line-height:1.6;
+}
+
+/* ==================== TABLE ==================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:13px;
+    overflow:hidden;
+    border-radius:14px;
+}
+
+table th{
+    background:var(--primary);
+    color:white;
+    padding:12px;
+    text-align:left;
+}
+
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+table tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+/* ==================== STRATEGY ==================== */
+
+.strategy{
+    background:linear-gradient(135deg,#042c66,#0d4c8d);
+    color:white;
+    border-radius:24px;
+    padding:35px;
+}
+
+.strategy h2{
+    margin-bottom:25px;
+    text-align:center;
+    font-size:34px;
+}
+
+.strategy-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.strategy-item{
+    background:rgba(255,255,255,0.1);
+    padding:22px;
+    border-radius:18px;
+}
+
+.strategy-item i{
+    font-size:30px;
+    margin-bottom:12px;
+    color:#ffd54a;
+}
+
+.strategy-item h3{
+    margin-bottom:10px;
+}
+
+/* ==================== TIMELINE ==================== */
+
+.timeline{
+    display:flex;
+    gap:14px;
+    margin-top:15px;
+}
+
+.step{
+    flex:1;
+    background:var(--light);
+    border-radius:16px;
+    text-align:center;
+    padding:20px;
+    border-top:5px solid var(--secondary);
+}
+
+.step i{
+    font-size:28px;
+    color:var(--secondary);
+    margin-bottom:12px;
+}
+
+.step h4{
+    color:var(--primary);
+    margin-bottom:8px;
+}
+
+.step p{
+    font-size:12px;
+}
+
+/* ==================== MINI BOX ==================== */
+
+.mini-box{
+    background:white;
+    border-radius:14px;
+    padding:16px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.06);
+}
+
+.mini-box h4{
+    margin-bottom:10px;
+    color:var(--primary);
+}
+
+/* ==================== FOOTER ==================== */
+
+.footer{
+    position:absolute;
+    left:18mm;
+    right:18mm;
+    bottom:10mm;
+    border-top:1px solid #ccc;
+    padding-top:8px;
+    display:flex;
+    justify-content:space-between;
+    color:#666;
+    font-size:12px;
+}
+
+/* ==================== PRINT ==================== */
+
+@media print{
+
+body{
+    background:white;
+}
+
+.page{
+    margin:0;
+    box-shadow:none;
+}
+
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media(max-width:900px){
+
+.page{
+    width:100%;
+    min-height:auto;
+    padding:25px;
+}
+
+.grid-2,
+.grid-3,
+.grid-4,
+.strategy-grid,
+.timeline{
+    grid-template-columns:1fr;
+    display:grid;
+}
+
+.hero-top{
+    flex-direction:column;
+    gap:20px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================================================= -->
+<!-- ==================== PAGE 1 ===================== -->
+<!-- ================================================= -->
+
+<div class="page">
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="hero-top">
+
+<div>
+
+<h1>
+Nepal’s <span>Solar Market</span> 2026
+</h1>
+
+<p>
+Realities, opportunities, policy challenges,
+strategic implications, and the future roadmap
+for Nepal’s integrated renewable energy transition.
+</p>
+
+</div>
+
+<div class="event-box">
+
+<h3><i class="fa-solid fa-calendar"></i> Event</h3>
+
+<p><strong>Date:</strong> 19 May 2026</p>
+<p><strong>Time:</strong> 09:00 AM – 05:00 PM</p>
+<p><strong>Venue:</strong> Kathmandu Marriott Hotel</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- QUOTE -->
+
+<div class="quote">
+
+<i class="fa-solid fa-quote-left"></i>
+
+<h2>
+“Nepal does not need more solar for the sake of numbers;
+it needs the right solar for the right places.”
+</h2>
+
+</div>
+
+<!-- MARKET INSIGHTS -->
+
+<div class="section">
+
+<div class="section-title">
+<i class="fa-solid fa-chart-line"></i>
+ Market Insights
+</div>
+
+<div class="grid-4">
+
+<div class="card">
+<i class="fa-solid fa-solar-panel"></i>
+<h3>Emerging Market</h3>
+<p>
+Nepal’s solar ecosystem is still early-stage with growing awareness but limited technical maturity.
+</p>
+</div>
+
+<div class="card blue">
+<i class="fa-solid fa-water"></i>
+<h3>Hydropower Dominance</h3>
+<p>
+Solar should complement Nepal’s hydro-based renewable system instead of replacing it.
+</p>
+</div>
+
+<div class="card orange">
+<i class="fa-solid fa-network-wired"></i>
+<h3>Grid Weakness</h3>
+<p>
+Weak transmission infrastructure and limited smart-grid capability remain key bottlenecks.
+</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-building-columns"></i>
+<h3>Policy Instability</h3>
+<p>
+Changing tariffs, licensing delays, and regulatory inconsistency create investor uncertainty.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- OBSERVATIONS -->
+
+<div class="section">
+
+<div class="section-title green">
+<i class="fa-solid fa-lightbulb"></i>
+ Conference Observations
+</div>
+
+<div class="grid-2">
+
+<div class="card">
+
+<h3>What Was Observed</h3>
+
+<ul>
+<li>Basic-level awareness discussions</li>
+<li>Aggressive foreign supplier entry</li>
+<li>Knowledge gaps in solar economics</li>
+<li>“Solar = cheap energy” narrative</li>
+<li>Grid uncertainty & approval reassessment</li>
+</ul>
+
+</div>
+
+<div class="card blue">
+
+<h3>Key Questions Raised</h3>
+
+<ul>
+<li>How should solar be developed in Nepal?</li>
+<li>What role should solar play in the national grid?</li>
+<li>Why is solar poorly reflected in policy?</li>
+<li>Which power type should support export?</li>
+<li>How should distributed systems evolve?</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TABLE -->
+
+<div class="section">
+
+<div class="section-title orange">
+<i class="fa-solid fa-scale-balanced"></i>
+ Nepal vs UK Solar Market
+</div>
+
+<table>
+
+<tr>
+<th>Category</th>
+<th>Nepal</th>
+<th>United Kingdom</th>
+</tr>
+
+<tr>
+<td>Market Stage</td>
+<td>Emerging & evolving</td>
+<td>Mature & stable</td>
+</tr>
+
+<tr>
+<td>Policy Stability</td>
+<td>Uncertain frameworks</td>
+<td>Long-term stable policy</td>
+</tr>
+
+<tr>
+<td>Grid Infrastructure</td>
+<td>Weak integration</td>
+<td>Smart flexible grid</td>
+</tr>
+
+<tr>
+<td>Solar Adoption</td>
+<td>Utility-focused</td>
+<td>Rooftop-driven</td>
+</tr>
+
+<tr>
+<td>Learning Curve</td>
+<td>Basic awareness</td>
+<td>Advanced expertise</td>
+</tr>
+
+<tr>
+<td>Land Availability</td>
+<td>Agricultural pressure</td>
+<td>Rooftop priority</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- KEY THEMES -->
+
+<div class="section">
+
+<div class="section-title">
+<i class="fa-solid fa-diagram-project"></i>
+ Key Themes from Discussions
+</div>
+
+<div class="grid-3">
+
+<div class="mini-box">
+<h4>Deployment & Technology</h4>
+<p>
+Smart grids matter more than only expanding generation capacity.
+Floating solar may still be premature for Nepal.
+</p>
+</div>
+
+<div class="mini-box">
+<h4>2-Year Priorities</h4>
+<p>
+Clear national vision, financing upgrades,
+policy predictability, and accountability.
+</p>
+</div>
+
+<div class="mini-box">
+<h4>Financing Focus</h4>
+<p>
+Banks dominated discussions while rooftop solar
+and technical quality received less attention.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+<div>Nepal Solar Market 2026 Strategic Report</div>
+<div>Page 1</div>
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- ==================== PAGE 2 ===================== -->
+<!-- ================================================= -->
+
+<div class="page">
+
+<!-- STRATEGY -->
+
+<div class="strategy">
+
+<h2>Strategic Recommendations for Nepal</h2>
+
+<div class="strategy-grid">
+
+<div class="strategy-item">
+<i class="fa-solid fa-house-solar"></i>
+<h3>Rooftop Solar</h3>
+<p>
+Encourage distributed rooftop systems rather than land-intensive utility projects.
+</p>
+</div>
+
+<div class="strategy-item">
+<i class="fa-solid fa-water"></i>
+<h3>Hybrid Hydro-Solar</h3>
+<p>
+Combine hydro and solar for seasonal balancing and resilient distributed systems.
+</p>
+</div>
+
+<div class="strategy-item">
+<i class="fa-solid fa-tower-cell"></i>
+<h3>Smart Grid Infrastructure</h3>
+<p>
+Upgrade transmission systems and integrate forecasting and grid intelligence.
+</p>
+</div>
+
+<div class="strategy-item">
+<i class="fa-solid fa-building-columns"></i>
+<h3>Policy Reform</h3>
+<p>
+Improve transparency, licensing efficiency,
+and long-term energy planning frameworks.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- ARCHITECTURE -->
+
+<div class="section" style="margin-top:25px;">
+
+<div class="section-title green">
+<i class="fa-solid fa-network-wired"></i>
+ Grid & System Architecture
+</div>
+
+<div class="grid-2">
+
+<div class="card blue">
+
+<h3>400kV Transmission</h3>
+
+<ul>
+<li>National backbone infrastructure</li>
+<li>Bulk power transfer</li>
+<li>Cross-regional grid stability</li>
+<li>Supports national-scale balancing</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>33kV Distribution</h3>
+
+<ul>
+<li>Localized distributed integration</li>
+<li>Mini-grids & rural electrification</li>
+<li>Industrial captive generation</li>
+<li>Hybrid hydro-solar systems</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TECHNOLOGY -->
+
+<div class="section">
+
+<div class="section-title">
+<i class="fa-solid fa-microchip"></i>
+ Technology & Deployment Themes
+</div>
+
+<div class="grid-4">
+
+<div class="card">
+<i class="fa-solid fa-house"></i>
+<h3>Rooftop Solar</h3>
+<p>High-potential decentralized energy solution.</p>
+</div>
+
+<div class="card blue">
+<i class="fa-solid fa-battery-full"></i>
+<h3>Battery Storage</h3>
+<p>Critical future requirement for reliability.</p>
+</div>
+
+<div class="card orange">
+<i class="fa-solid fa-water"></i>
+<h3>Floating Solar</h3>
+<p>Potential reservoir-based applications.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-brain"></i>
+<h3>Grid Intelligence</h3>
+<p>Forecasting, balancing, and smart dispatch systems.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- ROADMAP -->
+
+<div class="section">
+
+<div class="section-title orange">
+<i class="fa-solid fa-road"></i>
+ Strategic Roadmap
+</div>
+
+<div class="timeline">
+
+<div class="step">
+<i class="fa-solid fa-gear"></i>
+<h4>Phase 1</h4>
+<p>
+Policy reform and regulatory modernization.
+</p>
+</div>
+
+<div class="step">
+<i class="fa-solid fa-house"></i>
+<h4>Phase 2</h4>
+<p>
+Distributed rooftop and mini-grid expansion.
+</p>
+</div>
+
+<div class="step">
+<i class="fa-solid fa-battery-half"></i>
+<h4>Phase 3</h4>
+<p>
+Battery storage and forecasting integration.
+</p>
+</div>
+
+<div class="step">
+<i class="fa-solid fa-leaf"></i>
+<h4>Phase 4</h4>
+<p>
+Sustainable integrated national deployment.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- RISKS -->
+
+<div class="section">
+
+<div class="section-title">
+<i class="fa-solid fa-triangle-exclamation"></i>
+ Key Risks & Bottlenecks
+</div>
+
+<div class="grid-3">
+
+<div class="card orange">
+
+<h3>Policy Risks</h3>
+
+<ul>
+<li>Changing tariffs</li>
+<li>Licensing delays</li>
+<li>Weak approval systems</li>
+<li>Regulatory inconsistency</li>
+</ul>
+
+</div>
+
+<div class="card blue">
+
+<h3>Infrastructure Risks</h3>
+
+<ul>
+<li>Weak transmission planning</li>
+<li>Grid integration gaps</li>
+<li>Technology dependence</li>
+<li>Distribution bottlenecks</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Environmental Risks</h3>
+
+<ul>
+<li>Land-use conflicts</li>
+<li>Deforestation pressure</li>
+<li>Ecological degradation</li>
+<li>Unsustainable deployment</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FINAL -->
+
+<div class="quote">
+
+<i class="fa-solid fa-seedling"></i>
+
+<h2>
+Nepal’s renewable future depends on smart integration,
+grid intelligence, sustainability,
+environmental protection,
+and long-term strategic planning.
+</h2>
+
+</div>
+
+<div class="footer">
+<div>Nepal Solar Market 2026 Strategic Report</div>
+<div>Page 2</div>
+</div>
+
+</div>
+
+</body>
+</html>
